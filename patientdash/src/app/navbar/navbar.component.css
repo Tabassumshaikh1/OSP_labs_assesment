@@ -1,0 +1,38 @@
+.mat-toolbar-row.mat-toolbar-row {
+    background-color: rebeccapurple;
+}
+
+.background {
+    color: rebeccapurple;
+    background-color: white;
+}
+
+.mat {
+    color: white;
+}
+
+.content {
+    height: 88vh;
+    width: 32vh;
+
+}
+
+.text-colour {
+    color: #02075d;
+    font-weight: 500;
+    font-size: x-large;
+}
+
+.text-style {
+    color: #02075d;
+}
+
+img {
+    height: 145%;
+}
+
+.btns {
+    color: white;
+    background-color: rebeccapurple;
+
+}

@@ -1,0 +1,60 @@
+<mat-toolbar>
+  <mat-toolbar-row fxLayout="row" fxLayoutAlign="space-between center">
+    <div fxLayout="row" fxLayoutAlign="start center">
+      <div class="background rounded-pill ml-2"><span class="p-4">Patient System</span></div>
+      <button type="button" mat-button (click)="drawer.toggle()">
+        <mat-icon class="mat">menu</mat-icon>
+      </button>
+    </div>
+    <div>
+      <mat-nav-list fxLayout="row" fxLayoutAlign="end center">
+        <mat-list-item>
+          <mat-icon class="mat">local_post_office</mat-icon>
+        </mat-list-item>
+        <mat-list-item>
+          <mat-icon class="mat">notifications</mat-icon>
+        </mat-list-item>
+        <mat-list-item>
+          <mat-icon class="mat">account_circle</mat-icon>
+        </mat-list-item>
+      </mat-nav-list>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-drawer-container>
+  <mat-drawer #drawer class="example-sidenav content" mode="side">
+    <mat-nav-list>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9 m-4">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDqBOKhQnu2w0YyFyVBRyCRcnHOm0KMr96hqL-15xSPhow9LLeQMycP8wgRomdAs8b7Zs&usqp=CAU"
+              class="img-fluid rounded-circle" alt="Image of a man">
+          </div>
+          <h3 class="mt-5 text-center text-style">Lorem ipsum dolor Admin.</h3>
+
+        </div>
+      </div>
+      <mat-nav-list>
+        <button mat-button class="btns rounded-pill text-white p-3">
+          <mat-icon>add_circle_outline</mat-icon>Patient
+        </button>
+      </mat-nav-list>
+      <mat-nav-list>
+        <button mat-button class="text-secondary">
+          <mat-icon>account_circle</mat-icon>Logout
+        </button>
+      </mat-nav-list>
+    </mat-nav-list>
+  </mat-drawer>
+  <mat-drawer-content>
+    <div style="height: 88vh;">
+      <div class="card border-0">
+        <span class="p-3 text-colour">
+          Patient dashboard</span>
+      </div>
+      <app-forms></app-forms>
+      <router-outlet></router-outlet>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>

@@ -1,0 +1,26 @@
+.button_colour {
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.card_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+thead>tr>th {
+    background-color: rgb(247, 245, 245);
+}
+
+.text-colour {
+    color: #02075d;
+}
+
+mat-list-item {
+    font-size: 30px;
+}
+
+mat-icon {
+    color: rebeccapurple
+}

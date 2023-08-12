@@ -1,0 +1,24 @@
+.background {
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.card-header-box {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+button.w-100.rounded-pill {
+    border: none;
+}
+
+.card.card_style {
+    border-radius: 21px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 60px 0px;
+    width: 23rem;
+}
+
+h5 {
+    color: #02075d;
+    font-weight: bold;
+}
